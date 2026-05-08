@@ -1,0 +1,74 @@
+{
+  "name": "@tokushima/tt-barcode",
+  "version": "1.0.0",
+  "description": "Pure JS barcode generator (QR, MicroQR, DataMatrix, rMQR, NW7, CustomerBarcode) with SVG output",
+  "keywords": [
+    "barcode",
+    "qrcode",
+    "qr",
+    "micro-qr",
+    "rmqr",
+    "datamatrix",
+    "nw7",
+    "codabar",
+    "customer-barcode",
+    "japanpost",
+    "svg"
+  ],
+  "type": "module",
+  "main": "./src/index.mjs",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.mjs"
+    },
+    "./qrcode": {
+      "types": "./src/qrcode.d.ts",
+      "default": "./src/qrcode.mjs"
+    },
+    "./microqr": {
+      "types": "./src/microqr.d.ts",
+      "default": "./src/microqr.mjs"
+    },
+    "./datamatrix": {
+      "types": "./src/datamatrix.d.ts",
+      "default": "./src/datamatrix.mjs"
+    },
+    "./rmqr": {
+      "types": "./src/rmqr.d.ts",
+      "default": "./src/rmqr.mjs"
+    },
+    "./nw7": {
+      "types": "./src/nw7.d.ts",
+      "default": "./src/nw7.mjs"
+    },
+    "./customer-barcode": {
+      "types": "./src/customer-barcode.d.ts",
+      "default": "./src/customer-barcode.mjs"
+    }
+  },
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tokushima/tt-barcode-js.git"
+  },
+  "homepage": "https://github.com/tokushima/tt-barcode-js#readme",
+  "bugs": {
+    "url": "https://github.com/tokushima/tt-barcode-js/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node test/smoke.mjs && node test/fixtures.mjs",
+    "test:smoke": "node test/smoke.mjs",
+    "test:fixtures": "node test/fixtures.mjs"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
